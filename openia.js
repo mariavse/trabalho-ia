@@ -17,3 +17,4 @@ async function getOpenAIResponse(prompt) {
 }
 
 getOpenAIResponse("O que é Machine Learning?");
+
