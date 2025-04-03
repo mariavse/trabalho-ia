@@ -1,5 +1,6 @@
 require('dotenv').config();
 const { OpenAI } = require('openai');
+const prompt = require('prompt-sync')();
 
 const openai = new OpenAI({ apiKey: process.env.OPENIA_KEY });
 
@@ -16,5 +17,7 @@ async function getOpenAIResponse(prompt) {
     }
 }
 
-getOpenAIResponse("O que é Machine Learning?");
+const resposta = prompt("Me pergunte algo");
+
+getOpenAIResponse(resposta);
 
