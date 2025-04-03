@@ -23,6 +23,6 @@ async function getDeepSeekResponse(prompt) {
         console.error('Erro ao chamar DeepSeek API:', error.response?.data || error.message);
     }
 }
-const resposta = prompt("Me pergunte algo");
+const resposta = prompt("O que deseja saber? ");
 
 getDeepSeekResponse(resposta);

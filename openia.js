@@ -17,7 +17,7 @@ async function getOpenAIResponse(prompt) {
     }
 }
 
-const resposta = prompt("Me pergunte algo");
+const resposta = prompt("O que deseja saber? ");
 
 getOpenAIResponse(resposta);
 
